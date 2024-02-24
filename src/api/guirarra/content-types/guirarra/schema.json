@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guirarras",
+  "info": {
+    "singularName": "guirarra",
+    "pluralName": "guirarras",
+    "displayName": "Guirarra",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "default": "''",
+      "required": true,
+      "maxLength": 250
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "precio": {
+      "type": "integer",
+      "default": 0
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "nombre"
+    }
+  }
+}
